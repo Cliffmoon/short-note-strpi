@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": false
+    },
+    "nameTH": {
+      "type": "string",
+      "required": true
+    },
+    "nameENG": {
+      "type": "string",
+      "required": false
+    },
+    "Course_Code": {
+      "type": "string"
+    },
+    "Teacher": {
+      "type": "string",
+      "required": false
+    },
+    "University": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "string"
+    },
+    "Term": {
+      "type": "string"
+    },
+    "imagedata": {
+      "type": "component",
+      "repeatable": true,
+      "component": "imgs.images"
+    }
+  }
+}
